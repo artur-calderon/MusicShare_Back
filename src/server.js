@@ -1,4 +1,4 @@
 import {serverHttp} from "./Http.js";
 import './socket.js'
-
-serverHttp.listen(3001, () => console.log("Running..."));
+const port = process.env.PORT || 3000;
+serverHttp.listen(port, () => console.log("Running..."));
